@@ -2,7 +2,7 @@ public class MyCharSequence implements CharSequence {
 
     private final String charSequence;
 
-    MyCharSequence(String charSequence) {
+    public MyCharSequence(String charSequence) {
         this.charSequence = charSequence;
     }
 
