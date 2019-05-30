@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Animal",
+  "description": "Animals description",
+  "type": "object",
+  "properties": {
+    "animal_type": {
+      "description": "Type of the animal",
+      "type": "string"
+    },
+    "name": {
+      "description": "Name of the animal",
+      "type": "string"
+    },
+    "age": {
+      "description": "Age of the animal",
+      "type": "integer"
+    },
+    "has_tail": {
+      "description": "Shows if the animal has a tail",
+      "type": "boolean"
+    },
+    "colors": {
+      "description": "Colors of the animal",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "friends": {
+      "description": "",
+      "type": "object",
+      "properties": {
+        "count": {
+          "description": "Amount of friends",
+          "type": "integer"
+        }
+      }
+    }
+  },
+  "required": [
+    "animal_type",
+    "name",
+    "age",
+    "has_tail",
+    "colors",
+    "friends"
+  ]
+}
